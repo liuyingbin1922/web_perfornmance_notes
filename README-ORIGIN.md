@@ -1,60 +1,72 @@
 # Awesome WPO
 
-前端性能优化资源列表，多数为中文，包括少量的优秀英文资源。
-Inspired by https://github.com/davidsonfellipe/awesome-wpo (英文前端性能优化资源列表)。欢迎大家添加内容！
+A curated list of Web Performance Optimization. Everyone can contribute here!
 
-- [文档](#documentation)
-- [博客](#blogs)
-- [文章](#articles)
-- [演讲](#talks)
-- [分析器](#analyzers)
-- [分析器 API](#analyzers---api)
-- [CSS 性能测试](#benchmark---css)
-- [JavaScript 性能测试](#benchmark---javascript)
-- [书签栏工具](#bookmarklets)
+- [Docs](#documentation)
+- [Blogs](#blogs)
+- [Articles](#articles)
+- [Talks](#talks)
+- [Analyzers](#analyzers)
+- [Analyzers API](#analyzers---api)
+- [Benchmark - CSS](#benchmark---css)
+- [Benchmark - JS](#benchmark---javascript)
+- [Bookmarklets](#bookmarklets)
 - [CDN](#cdn)
-- [CDN 监测](#cdn---monitor)
-- [CDN 工具](#cdn---utilities)
-- [图片优化器](#image-optimizers)
-- [加载器](#loaders)
+- [CDN - Monitor](#cdn---monitor)
+- [CDN - Utilities](#cdn---utilities)
+- [Image Optimizers](#image-optimizers)
+- [Loaders](#loaders)
 - [Metrics Monitor](#metrics-monitor)
-- [HTML 压缩器](#minifiers---html)
-- [JS & CSS 压缩器](#minifiers---js--css)
-- [其他](#miscellaneous)
-- [雪碧图生成器](#sprite-generators)
+- [Minifiers HTML](#minifiers---html)
+- [Minifiers JS & CSS](#minifiers---js--css)
+- [Miscellaneous](#miscellaneous)
+- [Sprite Generators](#sprite-generators)
 - [SVG](#svg)
 - [Web Components](#web-components)
-- [Web 服务器模块](#webserver-modules)
-- [Web 服务器性能测试](#webserver-benchmarks)
-- [规范](#specs)
-- [统计](#stats)
-- [Web 性能 Meetup 群组](#web-performance-meetup-groups)
-- [其他 awesome 列表](#other-awesome-lists)
-- [贡献内容](#contributing)
+- [Webserver modules](#webserver-modules)
+- [Webserver Benchmarks](#webserver-benchmarks)
+- [Specs](#specs)
+- [Stats](#stats)
+- [Web Performance Meetup Groups](#web-performance-meetup-groups)
+- [Other Awesome Lists](#other-awesome-lists)
+- [Contributing](#contributing)
 
 
-## 文档
+## Documentation
 
-* Browser Diet [【中文】](http://browserdiet.com/zh/) [【英文】](http://browserdiet.com/en/) - 关于前端性能的协同指南。
-* PageSpeed Insights 规则 [【中文(墙外)】](https://developers.google.com/speed/docs/insights/rules?hl=zh-cn) [【英文(墙外)】](https://developers.google.com/speed/docs/insights/rules) - PageSpeed 小组创建的一份指南。
-* 网站优化加速最佳实践 [【中文】](http://blog.csdn.net/zhoudaxia/article/details/24182831) [【英文】](https://developer.yahoo.com/performance/rules.html) - 雅虎 Exceptional Performance 小组出品的最佳实践，包括 7 个目录总共 35 条。
-* Image Optimization Techniques [【英文】](http://www.imageoptimization.info/) - 一组优化图片和提高网页加载速度的工具和技术。
-
-
-## 博客
-
-欢迎补充优秀中文博客。
-
-## 文章
-
-欢迎补充优秀中文文章。
+* [Browser Diet](http://browserdiet.com/en/) - A collaborative guide about front-end performance.
+* [PageSpeed Insights Rules](https://developers.google.com/speed/docs/insights/rules) - A guide created by PageSpeed Team.
+* [Best Practices for Speeding Up Your Web Site](https://developer.yahoo.com/performance/rules.html) - The list includes 35 best practices divided into 7 categories, created by Yahoo! Exceptional Performance team.
+* [Image Optimization Techniques](http://www.imageoptimization.info/) - A collection of tools and techniques to optimize your images and improve your page load times.
 
 
-## 演讲
+## Blogs
 
-欢迎补充优秀中文演讲。
+* [Performance Calendar](http://calendar.perfplanet.com/2013/) - The speed geek's favorite time of the year.
+* [Web Performance Today](http://www.webperformancetoday.com/) - Great posts written by @tameverts.
 
-## 分析器
+
+## Articles
+
+* [Preventing 'layout thrashing'](http://wilsonpage.co.uk/preventing-layout-thrashing/) - Wilson Page
+* [JavaScript Memory Profiling](https://developer.chrome.com/devtools/docs/javascript-memory-profiling)
+* [Jank Busting for Better Rendering Performance](http://www.html5rocks.com/en/tutorials/speed/rendering/) - Tom Wiltzius
+* [Scrolling Performance](http://www.html5rocks.com/en/tutorials/speed/scrolling/) - Paul Lewis
+* [Getting started with the Picture Element](http://deanhume.com/Home/BlogPost/getting-started-with-the-picture-element/8109) - Dean Hume
+* [Improve Page Load Times With DNS Prefetching](http://www.deanhume.com/Home/BlogPost/improve-page-load-times-with-dns-prefetching/80) - Dean Hume
+* [Web Page Performance - Profiling paint times](http://www.deanhume.com/Home/BlogPost/web-page-performance---profiling-paint-times/91) - Dean Hume
+
+
+## Talks
+> Best talks about WPO
+
+* [CSS Performance Tooling](https://www.youtube.com/watch?v=FEs2jgZBaQA) - CSS Performance Tooling (Addy Osmani).
+* [Performance Tooling](https://www.youtube.com/watch?v=HAqjyCH_LOE) - Performance Tooling (Paul Irish).
+* [A developer's guide to rendering performance](http://vimeo.com/77591536) - Paul Lewis
+* [Jank Free: Chrome Rendering Performance](http://vimeo.com/77591536) - Nat Duca, Tom Wiltzius
+
+
+## Analyzers
 
 * [Confess](https://github.com/jamesgpearce/confess) - Uses PhantomJS to headlessly analyze web pages and generate manifests.
 * [Page Speed](https://developers.google.com/speed/pagespeed/) - The PageSpeed family of tools is designed to help you optimize the performance of your website. PageSpeed Insights products will help you identify performance best practices that can be applied to your site, and PageSpeed optimization tools can help you automate the process.
@@ -65,17 +77,17 @@ Inspired by https://github.com/davidsonfellipe/awesome-wpo (英文前端性能�
 * [Web Tracing Framework](https://github.com/google/tracing-framework) - Web Tracing Framework is a set of libraries, tools, and visualizers for the tracing and investigation of complex web applications.
 
 
-## 分析器 API
+## Analyzers - API
 
 * [Node-yslowjs](https://github.com/jmervine/node-yslowjs) - YSlow.js on Node.js is a simple Node.js wrapper for programmatically running phantomjs yslow.js.
 
 
-## CSS 性能测试
+## Benchmark - CSS
 
 * [CSS-perf](https://github.com/mdo/css-perf) - Completely unscientific way of testing CSS performance. Most of these tests will revolve around methodologies and techniques for determining effective CSS architecture. Put another way, I want to know what works best given a particular comparison of CSS strategies.
 
-## Javascript 性能测试
-> 用于创建测试用例、比较不同 JavaScript 实现的工具集。
+## Benchmark - Javascript
+> A set of tools for creating test cases and compare different implementations in JavaScript.
 
 * [JSPerf](http://jsperf.com/) - jsPerf aims to provide an easy way to create and share test cases, comparing the performance of different JavaScript snippets by running benchmarks.
 * [Benchmark.js](http://benchmarkjs.com/) - A robust benchmarking library that works on nearly all JavaScript platforms, supports high-resolution timers, and returns statistically significant results.
@@ -85,7 +97,7 @@ Inspired by https://github.com/davidsonfellipe/awesome-wpo (英文前端性能�
 * [Stats.js](https://github.com/mrdoob/stats.js) - This class provides a simple info box that will help you monitor your code performance.
 
 
-## 书签栏工具
+## Bookmarklets
 
 * [Yahoo YSlow for Mobile/Bookmarklet](https://developer.yahoo.com/yslow/) - YSlow analyzes web pages and suggests ways to improve their performance based on a set of rules for high performance web pages.
 * [PageSpeed](https://developers.google.com/speed/pagespeed/insights_extensions) - PageSpeed Insights is available as an open-source browser extension for Google Chrome. Webmasters and web developers can use PageSpeed Insights to evaluate the performance of their web pages and to get suggestions on how to improve them.
@@ -94,15 +106,6 @@ Inspired by https://github.com/davidsonfellipe/awesome-wpo (英文前端性能�
 
 
 ## CDN
-
-### 国内
-
-* [【七牛】开放静态文件 CDN](http://www.staticfile.org/) 提供了很多优秀的开源前端类库。
-* [【又拍】常用JavaScript库CDN服务](http://jscdn.upai.com/) 提供了一些常用的JavaScript库，包括 jQuery, MooTools, Modernizr, Dojo 和 Ember.js.
-* [【360】360网站卫士常用前端公共库CDN服务](http://libs.useso.com/) 提供了由一些常用前端公共库以及和谐使用Google公共库&字体库的调用方法。
-* [【百度】CDN公共库](http://openapi.baidu.com/wiki/index.php?title=docs/cplat/libs) 一些常用的前端类库。
-
-### 国外
 
 * [jsDelivr](https://github.com/jsdelivr/jsdelivr) - Similar to Google Hosted Libraries, jsDelivr is an open source CDN that allows developers to host their own projects and anyone to link to our hosted files in their websites.
 * [Google Hosted Libraries](https://developers.google.com/speed/libraries/) - Google Hosted Libraries is a content distribution network for the most popular, open-source JavaScript libraries.
@@ -114,31 +117,31 @@ Inspired by https://github.com/davidsonfellipe/awesome-wpo (英文前端性能�
 * [CDNify](https://cdnify.com/) - A Content Delivery Network for distributing all your static assets with ease around the globe.
 
 
-## CDN 监测
+## CDN - Monitor
 
 * [CDNperf](http://www.cdnperf.com/about) - finds you fast and reliable JavaScript CDNs that make your websites snappy and happy.
 
 
-## CDN 工具
+## CDN - Utilities
 
 * [Gulp-google-cdn](https://github.com/sindresorhus/gulp-google-cdn) - Replaces script references with Google CDN ones.
 
 
-## 图片优化器
-> 如何在不降低质量的情况下移除所有无用数据。
+## Image Optimizers
+>  How to remove all this unnecessary data and give you a file without degrading quality.
 
-* [Grunt-smushit](https://github.com/heldr/grunt-smushit) - 通过雅虎 Smushit 工具来移除 PNG 和 JPG 图片中多余字节的 Grunt 插件。 
-* [Gulp-smushit](https://github.com/heldr/gulp-smushit) - 通过雅虎 Smushit 工具来移除 PNG 和 JPG 图片中多余字节的 Gulp 插件。 
-* [Smush.it](http://www.smushit.com/ysmush.it/) - 对于不同的图片格式，Smush.it 使用特定的技术来移除图片中的多余字节。它是一个“无损”压缩工具，不会改变图片的显示效果和质量。
-* [Imagemin](https://github.com/imagemin/imagemin) - 使用 Node.js 无缝地压缩图片。
-* [Sharp](https://github.com/lovell/sharp) - 这个高速的 Node.js 模块的典型用途是将各种格式的大图片转换成不同大小的 “web 友好” 的 JPEG, PNG 和 WebP 图片。
-* [Gm](https://github.com/aheckmann/gm) - Node.js 里的 GraphicsMagick 和 ImageMagick。
-* [Exexif](https://github.com/h4cc/awesome-elixir) - 用于从 jpeg 文件中提取 tiff 和 exif 元数据的纯 Elixir(Erlang 虚拟机上的一种类 Ruby 语言) 库。
-* [OptiPNG](http://optipng.sourceforge.net/) - OptiPNG 是一个 PNG 优化器，能在不损失信息的情况下将 PNG 重新压缩到更小的尺寸。
-* [Grunt-contrib-imagemin](https://github.com/gruntjs/grunt-contrib-imagemin) - 在 Grunt 中压缩 PNG 和 JPEG 图片。
-* [Gulp-imagemin](https://github.com/sindresorhus/gulp-imagemin) - 在 Gulp 中压缩 PNG 和 JPEG 图片。
-* [Grunt-webp](https://github.com/somerandomdude/grunt-webp) - 在 Grunt 中将图片转换为 WebP 格式。
-* [Gulp-webp](https://github.com/sindresorhus/gulp-webp) - 在 Gulp 中将图片转换为 WebP 格式。
+* [Grunt-smushit](https://github.com/heldr/grunt-smushit) - Grunt plugin to remove unnecessary bytes of PNG and JPG using Yahoo Smushit.
+* [Gulp-smushit](https://github.com/heldr/gulp-smushit) - Gulp plugin to optimize PNG and JPG using Yahoo Smushit. Made on top of smosh.
+* [Smush.it](http://www.smushit.com/ysmush.it/) - Smush.it uses optimization techniques specific to image format to remove unnecessary bytes from image files. It is a "lossless" tool, which means it optimizes the images without changing their look or visual quality.
+* [Imagemin](https://github.com/imagemin/imagemin) - Minify images seamlessly with Node.js.
+* [Sharp](https://github.com/lovell/sharp) - The typical use case for this high speed Node.js module is to convert large images of many formats to smaller, web-friendly JPEG, PNG and WebP images of varying dimensions.
+* [Gm](https://github.com/aheckmann/gm) - GraphicsMagick and ImageMagick for node.
+* [Exexif](https://github.com/h4cc/awesome-elixir) - Pure elixir library to extract tiff and exif metadata from jpeg files.
+* [OptiPNG](http://optipng.sourceforge.net/) - OptiPNG is a PNG optimizer that recompresses image files to a smaller size, without losing any information.
+* [Grunt-contrib-imagemin](https://github.com/gruntjs/grunt-contrib-imagemin) - Minify PNG and JPEG images for Grunt.
+* [Gulp-imagemin](https://github.com/sindresorhus/gulp-imagemin) - Minify PNG, JPEG, GIF and SVG images with imagemin for Gulp.
+* [Grunt-webp](https://github.com/somerandomdude/grunt-webp) - Convert your images to WebP format.
+* [Gulp-webp](https://github.com/sindresorhus/gulp-webp) - Convert images to WebP for Gulp.
 * [Imageoptim](https://imageoptim.com/) - Free app that makes images take up less disk space and load faster, without sacrificing quality. It optimizes compression parameters, removes junk metadata and unnecessary color profiles.
 * [Grunt-imageoptim](https://github.com/JamieMason/grunt-imageoptim) - Make ImageOptim, ImageAlpha and JPEGmini part of your automated build process.
 * [ImageOptim-CLI](https://github.com/JamieMason/ImageOptim-CLI) - Automates ImageOptim, ImageAlpha, and JPEGmini for Mac to make batch optimisation of images part of your automated build process.
@@ -153,9 +156,8 @@ Inspired by https://github.com/davidsonfellipe/awesome-wpo (英文前端性能�
 * [Trimage](http://trimage.org/) - A cross-platform tool for losslessly optimizing PNG and JPG files.
 
 
-## 加载器
+## Loaders
 
-* [Sea.js](http://seajs.org/docs/) - 阿里出品的前端资源加载器。
 * [HeadJS](https://github.com/headjs/headjs)- The only script in your HEAD.
  for Responsive Design, Feature Detections, and Resource Loading.
 * [RequireJS](http://requirejs.org/) - RequireJS is a JavaScript file and module loader. It is optimized for in-browser use, but it can be used in other JavaScript environments, like Rhino and Node.
@@ -187,7 +189,7 @@ Inspired by https://github.com/davidsonfellipe/awesome-wpo (英文前端性能�
 * [WebPageTest API Wrapper for NodeJS](https://github.com/marcelduran/webpagetest-api) - WebPageTest API Wrapper is a NPM package that wraps WebPageTest API for NodeJS as a module and a command-line tool.
 
 
-## HTML 压缩器
+## Minifiers - HTML
 
 * [HTMLCompressor](https://code.google.com/p/htmlcompressor/) - HtmlCompressor is a small, fast and very easy to use Java library that minifies given HTML or XML source by removing extra whitespaces, comments and other unneeded characters without breaking the content structure. As a result pages become smaller in size and load faster. A command-line version of the compressor is also available.
 * [Django-htmlmin](https://github.com/cobrateam/django-htmlmin) - django-html in an HTML minifier for Python with full support for HTML 5. It supports Django, Flask and any other Python web framework. It also provides a command line tool that can be used for static websites or deployment scripts.
@@ -203,7 +205,7 @@ Inspired by https://github.com/davidsonfellipe/awesome-wpo (英文前端性能�
 * [Html-minifier](https://github.com/deanhume/html-minifier) - A simple Windows command line tool to minify your HTML, Razor views & Web Forms views
 
 
-## JS & CSS 压缩器
+## Minifiers - JS & CSS
 
 * [YUI Compressor](https://github.com/yui/yuicompressor) - JavaScript compressor which, in addition to removing comments and white-spaces, obfuscates local variables using the smallest possible variable name. This obfuscation is safe, even when using constructs such as 'eval' or 'with' (although the compression is not optimal is those cases) Compared to jsmin, the average savings is around 20%.
 * [UglifyJS2](https://github.com/mishoo/UglifyJS2) - UglifyJS is a JavaScript parser, minifier, compressor or beautifier toolkit,  written in JavaScript.
@@ -225,7 +227,7 @@ Inspired by https://github.com/davidsonfellipe/awesome-wpo (英文前端性能�
 * [Gulp-uncss](https://github.com/ben-eb/gulp-uncss) - A gulp task for removing unused CSS from your projects.
 
 
-## 其他
+## Miscellaneous
 
 * [Socialite.js](http://socialitejs.com/) - Socialite provides a very easy way to implement and activate a plethora of social sharing buttons — any time you wish. On document load, on article hover, on any event.
 * [uCSS](https://github.com/operasoftware/ucss) - uCSS is made for crawling (large) websites to find unused CSS selectors, but not remove unused CSS.
@@ -236,7 +238,7 @@ Inspired by https://github.com/davidsonfellipe/awesome-wpo (英文前端性能�
 * [Lazysizes](https://github.com/aFarkas/lazysizes) - High performance lazy loader for images (responsive and normal), iframes and scripts, that detects any visibility changes triggered through user interaction, CSS or JavaScript without configuration.
 
 
-## 雪碧图生成器
+## Sprite Generators
 
 * [Glue](https://github.com/jorgebastida/glue) - Glue is a simple command line tool to generate sprites:
 * [Pitomba-spriter](https://github.com/pitomba/spriter) - Spriter is a simple and flexible dynamic sprite generator for CSS, using Python. It can process CSS both synchronous and asynchronous as it provides classes to be used in your python code and also a watcher that listens to your filesystem and changes CSS and sprite as soon as a static is changed.
@@ -264,13 +266,13 @@ Inspired by https://github.com/davidsonfellipe/awesome-wpo (英文前端性能�
 * [Gulp-vulcanize](https://github.com/sindresorhus/gulp-vulcanize) - Concatenate a set of Web Components into one file that use Vulcanize.
 
 
-## Web 服务器模块
+## Webserver modules
 
 * [PageSpeed Module](https://developers.google.com/speed/pagespeed/module/download) - PageSpeed speeds up your site and reduces page load time. This open-source webserver module automatically applies web performance best practices to pages and associated assets (CSS, JavaScript, images) without requiring that you modify your existing content or workflow. PageSpeed is available as a module for Apache 2.x and Nginx 1.x.
 * [Webp-detect](https://github.com/igrigorik/webp-detect) - WebP with Accept negotiation.
 
 
-## Web 服务器性能测试
+## Webserver Benchmarks
 
 * [HTTPerf](https://code.google.com/p/httperf/) - httperf is a tool for measuring web server performance. It provides a flexible facility for generating various HTTP workloads and for measuring server performance.
 * [Apache JMeter](http://jmeter.apache.org/download_jmeter.cgi) - Open source load testing tool: It is a Java platform application.
@@ -282,7 +284,7 @@ Inspired by https://github.com/davidsonfellipe/awesome-wpo (英文前端性能�
 * [Gohttperf](https://github.com/jmervine/gohttperf) - Go Port of HTTPerf.rb.
 
 
-# 规范
+# Specs
 
 * [Web Performance Working Group](http://www.w3.org/2010/webperf/) - The mission of the Web Performance Working Group, part of the Rich Web Client Activity, is to provide methods to measure aspects of application performance of user agent features and APIs.
 * [Page Visibility](http://www.w3.org/TR/page-visibility/) - It is a permanent repository of web performance information such as size of pages, failed requests, and technologies utilized. This performance information allows us to see trends in how the Web is built and provides a common data set from which to conduct web performance research.
@@ -293,21 +295,21 @@ Inspired by https://github.com/davidsonfellipe/awesome-wpo (英文前端性能�
 * [CSS will-change](http://dev.w3.org/csswg/css-will-change/) - This specification defines the `will-change` CSS property which allows an author to declare ahead-of-time what properties are likely to change in the future, so the UA can set up the appropriate optimizations some time before they’re needed. This way, when the actual change happens, the page updates in a snappy manner.
 
 
-# 统计
+# Stats
 
 * [HTTP Archive](http://httparchive.org/index.php) - It is a permanent repository of web performance information such as size of pages, failed requests, and technologies utilized. This performance information allows us to see trends in how the Web is built and provides a common data set from which to conduct web performance research.
 
 # Web Performance Meetup Groups
 
-* [Web 性能 Meetup 群组](http://web-performance.meetup.com/) - Full list on www.meetup.com.
+* [Web Performance Meetup Groups](http://web-performance.meetup.com/) - Full list on www.meetup.com.
 
 
-# 其他 Awesome 列表
+# Other Awesome Lists
 
 * [bayandin/awesome-awesomeness](https://github.com/bayandin/awesome-awesomeness).
 * [sindresorhus/awesome](https://github.com/sindresorhus/awesome).
 
 
-# 贡献内容
+# Contributing
 
-你可以通过 [提交一个 issue](https://github.com/ipy/awesome-wpo-chinese/issues) 或者/并且 [发一个 pull request](https://github.com/ipy/awesome-wpo-chinese/pulls) 来贡献内容。
+For contributing, [open an issue](https://github.com/davidsonfellipe/awesome-wpo/issues) and/or a [pull request](https://github.com/davidsonfellipe/awesome-wpo/pulls).
